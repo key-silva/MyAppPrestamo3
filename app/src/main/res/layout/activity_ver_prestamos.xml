@@ -21,7 +21,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView10"
@@ -32,7 +33,8 @@
         android:text="Monto Credito"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/etMontoCredito"
@@ -45,7 +47,8 @@
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/textView11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="TextViewEdits" />
 
     <TextView
         android:id="@+id/textView11"
@@ -56,7 +59,9 @@
         android:text="Interes (%)"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/spUsuarios" />
+        app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
+        android:layout_marginLeft="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/spInteres"
@@ -67,7 +72,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/etMontoCredito"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -79,7 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/etPlazo"
@@ -92,7 +99,8 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spInteres"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="TextViewEdits" />
 
     <TextView
         android:id="@+id/textView13"
@@ -103,7 +111,8 @@
         android:text="Fecha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMontoCredito"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/etFecha"
@@ -116,7 +125,8 @@
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="TextViewEdits" />
 
     <TextView
         android:id="@+id/textView14"
@@ -126,7 +136,9 @@
         android:layout_marginTop="8dp"
         android:text="Fecha Finalizacion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFecha" />
+        app:layout_constraintTop_toBottomOf="@+id/etFecha"
+        android:layout_marginLeft="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/etFechaFinal"
@@ -138,7 +150,8 @@
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="TextViewEdits" />
 
     <TextView
         android:id="@+id/MontoaPagar"
@@ -149,7 +162,8 @@
         android:layout_marginTop="48dp"
         android:text="Monto a Pagar:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFechaFinal" />
+        app:layout_constraintTop_toBottomOf="@+id/etFechaFinal"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView17"
@@ -160,7 +174,8 @@
         android:layout_marginTop="56dp"
         android:text="Monto por Cuota:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MontoaPagar" />
+        app:layout_constraintTop_toBottomOf="@+id/MontoaPagar"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/tvMontoPagar"
@@ -178,7 +193,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvMontoCuota"
         app:layout_constraintTop_toBottomOf="@+id/etFechaFinal"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.639"
+        android:layout_marginRight="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/tvMontoCuota"
@@ -193,7 +210,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/tvMontoPagar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMontoPagar"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnSiguiente"
@@ -206,7 +224,8 @@
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/spUsuarios"
@@ -231,7 +250,8 @@
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView15"
@@ -242,5 +262,5 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="69dp"
         android:layout_marginLeft="8dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
