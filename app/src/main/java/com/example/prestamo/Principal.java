@@ -63,15 +63,15 @@ public class Principal extends AppCompatActivity {
         TextView tv=findViewById(R.id.tvRegistro);
         if(requestCode==NUSUARIO){
             if(resultCode==RESULT_OK){
-                tv.append("\nIngreso de nuevo Cliente OK ");
+                tv.append("\nNuevo Cliente ");
             }else{
-                tv.append("\nCancelo Ingreso de nuevo cliente");
+                tv.append("\nCancelar");
             }
         }else if(requestCode==NPRESTAMO){
             if(resultCode==RESULT_OK){
-                tv.append("\nIngreso de nuevo Prestamo OK");
+                tv.append("\nNuevo Prestamo");
             }else{
-                tv.append("\nCancelo Nuevo prestamo");
+                tv.append("\nCancelar");
             }
         }
         super.onActivityResult(requestCode, resultCode, data);

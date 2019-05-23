@@ -28,7 +28,7 @@ public class VerPrestamos extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if(indice==Datos.prestamos.size()-1){
-                        Toast.makeText(VerPrestamos.this, "LLego al fin", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VerPrestamos.this, "Fin", Toast.LENGTH_SHORT).show();
                     }else {
                         indice=1+indice;
                         llenarPrestamo();
@@ -41,7 +41,7 @@ public class VerPrestamos extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if(indice==0){
-                        Toast.makeText(VerPrestamos.this, "Llego al inicio", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(VerPrestamos.this, "Inicio", Toast.LENGTH_SHORT).show();
                     }else{
                         indice=indice-1;
                         llenarPrestamo();

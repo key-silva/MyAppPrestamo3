@@ -26,10 +26,10 @@ public class ListCliente extends AppCompatActivity {
             public void OnItemClick(final int posicion, long id) {
                 if(id==R.id.ibEliminar){
                     AlertDialog.Builder builder = new AlertDialog.Builder(ListCliente.this);
-                    builder.setTitle("Eliminando Cliente");
-                    builder.setMessage("Esta muy pero muy seguro de que deseas eliminar "+ Datos.clientes.get(posicion).getNombre());
-                    builder.setNegativeButton("NOOO", null);
-                    builder.setPositiveButton("SIII", new DialogInterface.OnClickListener() {
+                    builder.setTitle("Eliminando");
+                    builder.setMessage("Seguro que desea eliminarlo"+ Datos.clientes.get(posicion).getNombre());
+                    builder.setNegativeButton("NO", null);
+                    builder.setPositiveButton("SI", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Datos.clientes.remove(posicion);
