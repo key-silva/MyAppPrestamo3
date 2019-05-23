@@ -61,13 +61,16 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.mnAceptar:
+
                 EditText txtNombre = findViewById(R.id.etNombre);
                 EditText txtTelefono = findViewById(R.id.etTelefono);
                 EditText txtCedula = findViewById(R.id.etCedula);
                 EditText txtDireccion = findViewById(R.id.etDireccion);
                 EditText txtApellido = findViewById(R.id.etApellido);
                 EditText txtOcupacion = findViewById(R.id.etOcupacion);
+
                 Spinner spSexo = findViewById(R.id.spinner);
+
                 if (txtNombre.getText().toString().length() == 0 || txtCedula.getText().toString().length() == 0 || txtDireccion.getText().toString().length() == 0 || txtTelefono.getText().toString().length() == 0) {
                     if (txtNombre.getText().toString().length() == 0)
                         txtNombre.setError("Ingresar Nombre");
@@ -98,12 +101,10 @@ public class MainActivity extends AppCompatActivity {
                         Datos.clientes.get(indice).setOcupacion(txtOcupacion.getText().toString());
                     }
 
-
                     Intent intent = new Intent();
                     intent.putExtra("nombre", txtNombre.getText().toString());
                     setResult(RESULT_OK, intent);
                     finish();
-
 
                 }
                 break;
