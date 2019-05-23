@@ -15,7 +15,8 @@
         android:text="Registro Creditos"
         android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -25,7 +26,8 @@
         android:layout_marginTop="8dp"
         android:text="Monto Credito"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spUsuarios" />
+        app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/etMontoCredito"
@@ -49,7 +51,8 @@
         android:text="Interes (%)"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/spUsuarios" />
+        app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
+        android:layout_marginLeft="8dp" />
 
     <Spinner
         android:id="@+id/spInteres"
@@ -61,7 +64,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/etMontoCredito"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -72,7 +76,8 @@
         android:text="Plazo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/spUsuarios" />
+        app:layout_constraintTop_toBottomOf="@+id/spUsuarios"
+        android:layout_marginRight="8dp" />
 
     <EditText
         android:id="@+id/etPlazo"
@@ -95,7 +100,8 @@
         android:layout_marginTop="8dp"
         android:text="Fecha"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMontoCredito" />
+        app:layout_constraintTop_toBottomOf="@+id/etMontoCredito"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/etFecha"
@@ -118,7 +124,8 @@
         android:layout_marginTop="8dp"
         android:text="Fecha Finalizacion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFecha" />
+        app:layout_constraintTop_toBottomOf="@+id/etFecha"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/etFechaFinal"
@@ -151,7 +158,8 @@
         android:layout_marginTop="50dp"
         android:text="Monto por Cuota:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MontoaPagar" />
+        app:layout_constraintTop_toBottomOf="@+id/MontoaPagar"
+        android:layout_marginLeft="8dp" />
 
     <TextView
         android:id="@+id/tvMontoPagar"
@@ -184,7 +192,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        tools:layout_editor_absoluteY="412dp" />
+        tools:layout_editor_absoluteY="412dp"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/spUsuarios"
